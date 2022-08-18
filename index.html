@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
+    <meta rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="images/favicon_256x256.png">
     <meta charset="UTF-8">
     <title>Scuderia Ferrari Formula 1</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
+    <div id="fixedMenu">
         <a href="index.html">
             <div class="menuBox">
                 Home
@@ -28,11 +32,12 @@
             </div>
         </a>
     </div>
+    <div class="emptySpace"></div>
     <div class="content">
         <img class="imgFrame" src="images/charles-leclerc-ferrari-f1-75-1.jpg">
-        <div class="aboutBox" id="aboutUsText">
-            <h3>About us</h3>
-            <p>For many, Ferrari and Formula 1 racing have become inseparable. The only team to have competed in every
+        <div class="aboutBox">
+            <h2 id="aboutUsTitle"><b>About Us</b></h2>
+            <p id="aboutUsText">For many, Ferrari and Formula 1 racing have become inseparable. The only team to have competed in every
                 season since the world championship began, the Prancing Horse has grown from the humble dream of founder
                 Enzo Ferrari to become one of the most iconic and recognised brands in the world. Success came quickly
                 through the likes of Alberto Ascari and John Surtees, and continued – in amongst leaner times – with Niki
@@ -89,17 +94,24 @@
             </table>
         </div>
         <img class="imgFrame" src="images/ferrari-f1-75-1.jpg" alt="Ferrari F1-75">
-        <div class="drivers">
-            <h1>Our Drivers</h1>
-            <div class="aboutBox">
-                <img class="imgFrame" src="images/charlesleclerc.jpg" alt="Charles Leclerc">
-                <p>Charles Leclerc - <b>16</b></p>
-            </div>
-            <div class="aboutBox">
-                <img class="imgFrame" src="images/carlossainz.jpg" alt="Carlos Sainz">
-                <p>Carlos Sainz - <b>55</b></p>
-            </div>
+        <div id="drivers">
+            <h2><b>Our Drivers</b></h2>
+            <a href="charlesleclerc.html">
+                <div class="driversBox">
+                    <img class="imgFrame" src="images/charlesleclerc.jpg" alt="Charles Leclerc">
+                    <h3 class="driverName"><b>16</b></h3>
+                    <p class="driverName">Charles Leclerc</p>
+                </div>
+            </a>
+            <a href="carlossainz.html">
+                <div class="driversBox">
+                    <img class="imgFrame" src="images/carlossainz.jpg" alt="Carlos Sainz">
+                    <h3 class="driverName"><b>55</b></h3>
+                    <p class="driverName">Carlos Sainz</p>
+                </div>
+            </a>
         </div>
     </div>
+    <div class="emptySpace"></div>
 </body>
 </html>
